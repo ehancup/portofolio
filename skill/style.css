@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Lato&family=Montserrat:wght@500&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+
+}
+
+
+
+/* nav */
+header{
+    font-family: 'lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 10px; */
+    /* background: #374957; */
+    width: 9%;
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    border-radius: 25px;
+    transition: .4s;
+    z-index: 100000000000;
+}
+
+header.sticky{
+    top: 10px;
+    padding: 3px 0px;
+    background: #374957;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px hsla(195, 5%, 16%, 0.518);
+    width: 7.5%;
+    left: 46.5%;
+}
+
+button{
+    /* margin-left: 20px; */
+    padding: 9px 33px;
+    background-color: #0087a9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: azure;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+button:hover{
+    transition: all 0.3s ease 0s;
+    background-color: #374957;
+    color: #0087a9;
+}
+
+/* programming skill */
+section.program{
+    background: #252932;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-title{
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.skill{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.card{
+    border-radius: 25px;
+    background: #fff;
+    width: 280px;
+    margin: 20px 20px;
+    align-items: center;
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #0087a9;
+    /* background-repeat: ; */
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background: #292826;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0 ;
+    background-color: #fff;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+    /* filter: grayscale(2); */
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0087a9;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #374957;
+    font-family: 'kavoon', cursive;
+}
+
+.proses{
+    width: 250px;
+    height: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #bebebe;
+    margin: 14px;
+}
+
+.proses-bar{
+    background-color: #0087a9;
+    /* width: 87%; */
+    height: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    padding-right: 5px;
+    color: #fff;
+}
+
+.html{
+    width: 87%;
+}
+
+.css{
+   
+    width: 47%;
+    
+}
+.js{
+    
+    width: 32%;
+    
+}
+.ux{
+    
+    width: 43%;
+    
+}
+.py{
+    
+    width: 24%;
+   
+}
+
+section.app{
+    background: #2e3440;
+    padding-top: 10px                                                                                                                                                                                                                                                                                                                                                                   ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

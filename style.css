@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Lato&family=Montserrat:wght@500&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+header{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    transition: .4s;
+    z-index: 100;
+    padding: 0 100px;
+}
+
+header.sticky{
+   
+    padding: 0 100px;
+    background: #374957;
+    top: 2px;
+    right: 100px;
+    left: 100px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px hsla(195, 5%, 16%, 0.518);
+}
+
+header .logo{
+    width: 200px;
+    transition: .4s;
+}
+
+header.sticky .logo{
+    width: 100px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li{
+    list-style: none;
+    position: relative;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: azure;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: .4s;
+    padding-bottom: 2px;
+    border-bottom: 3px solid #0000;
+}
+
+header ul li a:hover{
+    color: #0087a9;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #0087a9;
+}
+header ul li a:active{
+    color: #0087a9;
+    padding-bottom: 17px;
+    border-bottom: 4px solid #0087a9;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #0087a9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: azure;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+button:hover{
+    transition: all 0.3s ease 0s;
+    background-color: #374957;
+    color: #0087a9;
+}
+
+.active a{
+    position: relative;
+    color: #0087a9;
+    padding-bottom: 16px;
+    border-bottom: 4px solid #0087a9;
+}
+
+/* homepage */
+section.first{
+    position: relative;
+    background: url(The\ Neon\ Shallows\ in\ Nordtheme\ with\ ImageGoNord.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.profile-home img{
+    position: relative;
+    width: 150px;
+    border: 4px solid #0087a9;
+    border-radius: 100%;
+    padding: 6px;
+    transition: .4s;
+    opacity: 80%;
+}
+
+.profile-home img:hover{
+    padding: 0;
+    opacity: 100%   ;
+}
+
+.title-home{
+    margin-top: 10px;
+}
+
+.title-home h3,h1,h4{
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 1px;
+    color: azure;
+    font-weight: 800;
+}
+
+.title-home h3{
+    font-size: 2rem;
+}
+
+.title-home h1{
+    font-size: 5rem;
+}
+
+.title-home h4{
+    font-size: 1.5rem;
+}
+
+span.pro{
+    color: #0087a9;
+    -webkit-text-fill-color: #0000;
+    -webkit-text-stroke-width: 1px;
+    transition: .4s;
+}
+
+span.pro:hover{
+    color: #0087a9;
+    -webkit-text-fill-color: #2e3440;
+    -webkit-text-stroke-width: 0;
+}
+
+span.student{
+    color: #0087a9;
+}
+
+/* about */
+section.second{
+    min-height: 700px;
+    background: #2e3440 url(rehan.png);
+    background-repeat: no-repeat;
+    background-position: 29.5% 70%;
+}
+
+.about-wrap{
+    display: flex;
+    
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.name{
+    font-family: 'montserrat', sans-serif;
+    padding-top: 300px;
+    padding-left: 110px;
+    
+}
+
+.name h5{
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    color: azure;
+    font-weight: 100;
+}
+
+.name h1{
+    letter-spacing: 5px;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.name h1 span{
+    color: azure;
+    -webkit-text-fill-color: #0000;
+    -webkit-text-stroke-width: 0.2px;
+    transition: .4s;
+}
+
+.name h1 span:hover{
+    color: #0087a9;
+    -webkit-text-fill-color: #0000;
+    -webkit-text-stroke-width: 0.2px;
+}
+
+.aboutMe{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-right: 110px;
+    padding-top: 130px;
+    padding-left: 110px;
+    position: relative;
+}
+
+.title-about img{
+    height: 50px;
+}
+
+.title-about{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe p{
+    margin-top: 50px;
+    color: azure;
+    font-size: 1.2rem;
+    max-width: 680px;
+}
+
+.aboutMe p a{
+    text-decoration: none;
+    color: #0087a9;
+    transition: .2s;
+}
+
+.aboutMe p a:hover{
+    color: azure;
+    text-decoration: underline;
+}
+
+/* skills */
+section.third{
+    background: #252932;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.skill-swiper{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    flex-direction: column;
+}
+
+.title-skill img{
+    height: 50px;
+}
+
+.slide-container{
+    max-width: 1140px;
+    width: 100%;
+
+    padding: 40px 0;
+   
+}
+
+.slide-content{
+    overflow: hidden;
+    margin: 0 40px;
+    border-radius: 25px;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #fff;
+
+   
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(waneella\ \(@waneella_\)\ _\ Twitter.png);
+    background-repeat: round;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background: #292826;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0 ;
+    background-color: #fff;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0087a9;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #374957;
+    font-family: 'kavoon', cursive;
+}
+
+.proses{
+    width: 250px;
+    height: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #bebebe;
+    margin: 14px;
+}
+
+.proses-bar{
+    background-color: #0087a9;
+    
+    height: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    padding-right: 5px;
+    color: #fff;
+}
+
+.html{
+    width: 87%;
+}
+
+.css{
+    
+    width: 47%;
+    
+}
+.js{
+    
+    width: 32%;
+   
+}
+.ux{
+    
+    width: 43%;
+    
+}
+.py{
+    
+    width: 24%;
+    
+}
+
+.swiper-navBtn{
+    color: #8cbdd1;
+    transition: color .3s ease;
+} 
+
+.swiper-navBtn:hover{
+    color: #0087a9;
+} 
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+
+.swiper-button-next{
+    right: 3;
+    transition: .3s ease;
+}
+
+.swiper-button-next:hover{
+    right: 0;
+}
+
+.swiper-button-prev{
+    left: 3;
+    transition: .3s ease;
+}
+
+.swiper-button-prev:hover{
+    left: 0;
+}
+
+.swiper-pagination-bullet{
+    background: #8cbdd1;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background: #0087a9;
+}
+
+.viewll{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.view{
+    font-family: 'lato', sans-serif;
+   
+}
+
+/* project */
+section.fourth{
+    min-height: 100vh;
+    background: #2e3440;
+}
+
+@media screen and (max-width: 959px) {
+    section.second{
+        background-position: 50% 30%;
+    }
+    .about-wrap{
+        flex-direction: column;
+    }
+    .aboutMe{
+        margin-bottom: 100px;
+    }
+    
+}
+
+
+/* ipad mini */
+@media screen and (max-width: 768px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+}
+
