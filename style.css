@@ -177,12 +177,13 @@ section.second{
     min-height: 700px;
     background: #2e3440 url(rehan.png);
     background-repeat: no-repeat;
-    background-position: 29.5% 70%;
+    background-position: 29.5% 43%;
+    min-height: 100vh;
 }
 
 .about-wrap{
     display: flex;
-    
+    align-items: center;
     justify-content: space-around;
     z-index: 5;
 }
@@ -467,6 +468,11 @@ button.view{
 section.fourth{
     min-height: 100vh;
     background: #2e3440;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 @media screen and (max-width: 959px) {
