@@ -104,6 +104,20 @@ button:hover{
     border-bottom: 4px solid #0087a9;
 }
 
+.btn-menu {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.btn-close {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+}
+
 /* homepage */
 section.first{
     position: relative;
@@ -179,6 +193,7 @@ section.second{
     background-repeat: no-repeat;
     background-position: 29.5% 43%;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .about-wrap{
@@ -506,6 +521,26 @@ section.fourth{
     flex-direction: column;
 }
 
+
+@media screen and (max-width:1052px) {
+    section.second{
+        background-position: 57% 15%;
+    }
+
+    .about-wrap{
+        flex-direction: column;
+    }
+
+    .name{
+        padding-left: 0px;
+        padding-right: 200px;
+        padding-top: 200px;
+        /* right: 1000px; */
+    }
+}
+
+
+
 @media screen and (max-width: 959px) {
     section.second{
         background-position: 50% 30%;
@@ -516,7 +551,46 @@ section.fourth{
     .aboutMe{
         margin-bottom: 100px;
     }
-    
+
+    .btn-menu {
+        display: block;
+    }
+
+    .cta {
+        display: none;
+    }
+
+    .btn-active {
+        display: none;
+    }
+
+    .sticky nav{
+        top: 70px;
+    }
+
+    nav{
+        position: absolute;
+        background-color: #374957;
+        top: 120px;
+        border-radius: 10px;
+        left: -500px;
+        transition: 1s;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 200px;
+        height: 400px;
+        justify-content: space-around;
+    }
+
+    .nav-active {
+        left: 0px;
+    }
+
+    .boton{
+        display: block;
+    }
 }
 
 
@@ -528,5 +602,9 @@ section.fourth{
     .swiper-navBtn{
         display: none;
     }
+    .pro-card{
+        width: 600px;
+    }
+
 }
 
