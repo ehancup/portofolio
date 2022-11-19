@@ -475,6 +475,37 @@ section.fourth{
     
 }
 
+.project-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pro-card{
+    width: 40%;
+    height: 300px;
+    background: url(project/Frame\ 1.png);
+    background-size: cover;
+    margin: 20px 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    /* background-repeat:; */
+}
+
+.pro-title{
+    width: 100%;
+    height: 100%;
+    background: #2529327d ;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 959px) {
     section.second{
         background-position: 50% 30%;
