@@ -206,7 +206,7 @@ section.second{
 .name{
     font-family: 'montserrat', sans-serif;
     padding-top: 300px;
-    padding-left: 110px;
+    left: 110px;
     
 }
 
@@ -530,9 +530,9 @@ section.fourth{
     opacity: 100%;
 }
 
-section.fifth{
+/* section.fifth{
     min-height: 100vh;
-}
+} */
 
 
 @media screen and (max-width:1052px) {
@@ -616,8 +616,57 @@ section.fifth{
         display: none;
     }
     .pro-card{
-        width: 600px;
+        /* width: 600px; */
     }
 
 }
 
+@media screen and (max-width:700px) {
+    header.sticky{
+        right: 50px;
+        left: 50px;
+    }
+    section.second{
+        background: #2e3440 url(rehan2.png);
+        background-repeat: no-repeat;
+        background-position: 53.5% 20%;
+
+    }
+
+    .name{
+        padding-top: 200px;
+        left: 0px;
+    }
+
+    .name h1{
+        font-size: 2.5rem;
+        letter-spacing: .5px;
+    }
+
+    .name h5{
+        font-size: 0.8rem;
+    }
+
+    .aboutMe p{
+        font-size: 1rem;
+        
+    }
+
+    .aboutMe {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header{
+        padding: 0 50px;
+    }
+
+    header.sticky{
+        padding: 0 50px;
+        right: 20px;
+        left: 20px;
+    }
+
+}
