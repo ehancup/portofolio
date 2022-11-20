@@ -510,15 +510,28 @@ section.fourth{
     /* background-repeat:; */
 }
 
+.pro-card a{
+    text-decoration: none;
+}
+
 .pro-title{
     width: 100%;
     height: 100%;
-    background: #2529327d ;
-    opacity: 100%;
+    background: #252932dc ;
+    opacity: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: .4s;
+}
+
+.pro-title:hover{
+    opacity: 100%;
+}
+
+section.fifth{
+    min-height: 100vh;
 }
 
 
@@ -573,8 +586,8 @@ section.fourth{
         background-color: #374957;
         top: 120px;
         border-radius: 10px;
-        left: -500px;
-        transition: 1s;
+        right: -500px;
+        transition: .5s;
     }
 
     nav ul {
@@ -585,7 +598,7 @@ section.fourth{
     }
 
     .nav-active {
-        left: 0px;
+        right: 0px;
     }
 
     .boton{
