@@ -25,7 +25,7 @@ header{
 header.sticky{
    
     padding: 0 100px;
-    background: #374957;
+    background: #3b414f;
     top: 2px;
     right: 100px;
     left: 100px;
@@ -123,14 +123,22 @@ button:hover{
 }
 
 /* homepage */
+body{
+    background: url(Group\ 5.png);
+    background-position: top center;
+    /* background-size: 100vh; */
+    background-attachment: fixed;
+}
+
 main{
     width: 100%;
 }
 
 section.first{
     position: relative;
-    background: url(The\ Neon\ Shallows\ in\ Nordtheme\ with\ ImageGoNord.png);
+    /* background: url(The\ Neon\ Shallows\ in\ Nordtheme\ with\ ImageGoNord.png); */
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 830px;
     display: flex;
@@ -200,9 +208,11 @@ section.second{
     min-height: 700px;
     background: #2e3440 url(rehan.png);
     background-repeat: no-repeat;
-    background-position: 29.5% 43%;
+    background-position: 25% 43%;
     min-height: 100vh;
     padding: 20px;
+    margin: 0 20px;
+    border-radius: 20px;
 }
 
 .about-wrap{
@@ -285,7 +295,7 @@ section.second{
 
 /* skills */
 section.third{
-    background: #252932;
+    /* background: #202124; */
     display: flex;
     flex-direction: column;
     
@@ -310,8 +320,9 @@ section.third{
 .slide-container{
     max-width: 1140px;
     width: 100%;
-
+    background: rgba(0, 0, 0, 0.23);
     padding: 40px 0;
+    border-radius: 25px;
    
 }
 
@@ -319,12 +330,14 @@ section.third{
     overflow: hidden;
     margin: 0 40px;
     border-radius: 25px;
+    /* background: #000; */
 }
 
 .card{
     border-radius: 25px;
     background-color: #fff;
     box-shadow: 0px 10px 10px hsla(195, 5%, 16%, 0.518);
+    overflow: hidden;
 
 
    
@@ -499,6 +512,9 @@ section.fourth{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 20px;
+    margin: 0 20px;
+    padding: 20px 0;
     
 }
 
@@ -508,17 +524,18 @@ section.fourth{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 
 }
 
 .pro-card{
-    width: 40%;
-    height: 300px;
+    width: 35%;
+    height: 250px;
 
     margin: 20px 10px;
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0px 10px 10px hsla(195, 5%, 16%, 0.518);
+    box-shadow: 8px 15px 10px hsla(195, 5%, 16%, 0.518);
 
     /* background-repeat:; */
 }
@@ -568,6 +585,7 @@ section.fourth{
     flex-direction: column;
     transition: .4s;
     text-align: center;
+    margin-bottom: 10px ;
 }
 
 .pro-title h3{
@@ -580,25 +598,104 @@ section.fourth{
     opacity: 100%;
 }
 
-/* section.fifth{
-    min-height: 100vh;
-} */
+section.lima{
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.bungkus{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 30px 0;
+    width: 500px;
+}
+
+.apaj{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.ig:hover{
+    background: rgb(167, 9, 104);
+}
+.fb:hover{
+    background: rgb(12, 70, 204);
+}
+.yt:hover{
+    background: rgb(225, 6, 6);
+}
+.gh:hover{
+    background: rgb(0, 0, 0);
+}
+
+.apaj .icon{
+    font-size: 35px;
+    color: #292826;
+}
+
+.apaj:hover .icon{
+    color: white;
+}
+
+.garis{
+    margin: 0 20px;
+    width: 90%;
+}
+
+.copyright{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+}
 
 @media screen and (max-width:1052px) {
     section.second{
         background-position: 57% 15%;
+        margin: 0 10px;
     }
 
+    section.fourth{
+        margin: 0 10px;
+    }
     .about-wrap{
         flex-direction: column;
     }
 
     .name{
         padding-left: 0px;
-        padding-right: 200px;
+        margin-right: 200px;
         padding-top: 200px;
+        right: 200px;
         /* right: 1000px; */
+    }
+
+    .pro-title{
+        opacity: 1;
+    }
+
+    .pro-title:hover{
+        background: rgba(0, 0, 0, 0.446);
     }
 }
 
@@ -606,7 +703,11 @@ section.fourth{
 
 @media screen and (max-width: 959px) {
     section.second{
-        background-position: 50% 30%;
+        background-position: 55% 20%;
+        margin: 0;
+    }
+    section.fourth{
+        margin: 0;
     }
     .about-wrap{
         flex-direction: column;
@@ -633,16 +734,19 @@ section.fourth{
 
     nav{
         position: absolute;
-        background-color: #374957;
+        background: #3b414f;
         top: 120px;
         border-radius: 10px;
         right: -500px;
         transition: .8s;
+        box-shadow: 0px 10px 10px hsla(195, 5%, 16%, 0.518);
+
+        /* bottom: 20px; */
     }
 
     nav ul {
         flex-direction: column;
-        width: 200px;
+        width: 180px;
         height: 400px;
         justify-content: space-around;
     }
@@ -738,16 +842,35 @@ section.fourth{
     .title-home h4{
         font-size: 1rem;
     }
+    .sosmed{width: 100%;}
 
 }
 
 @media screen and (max-width: 490px) {
+    header{
+        padding: 0 10px;
+    }
+    header .logo{
+        width: 150px;
+    }
+    header.sticky{
+        padding: 0 20px;
+        right: 10px;
+        left: 10px;
+    }
+    header.sticky .logo{
+        width: 80px;
+    }
+    .btn-menu,.btn-close{
+        font-size: 1.5em;
+    }
     main{
         margin: 0;
         width: 100%;
     }
     .name{
-        padding-left: 100px;
+        margin-right: 100px;
+        left: -100px;
     }
     .aboutMe{
         padding-left: 10px;
@@ -758,5 +881,22 @@ section.fourth{
     }
     .pro-title h3{
         font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pro-card{
+        width: 600px;
+        height: 130px;
+        margin: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    section.second{
+        background-position: 95% 10%;
+    }
+    .name{
+        margin-right: 0;
     }
 }

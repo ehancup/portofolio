@@ -21,7 +21,7 @@ header{
     /* background: #374957; */
     width: 9%;
     position: fixed;
-    top: 15px;
+    top: 20px;
     left: 10px;
     border-radius: 25px;
     transition: .4s;
@@ -29,9 +29,10 @@ header{
 }
 
 header.sticky{
-    top: 10px;
+    top: 30px;
     padding: 3px 0px;
     background: #374957;
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,6 +60,19 @@ button:hover{
     color: #0087a9;
 }
 
+.bacion{
+    font-size: 40px;
+    display: none;
+}
+
+/* body */
+
+body{
+    background: url(../Group\ 5.png);
+    background-position: top center;
+    background-attachment: fixed;
+}
+
 /* programming skill */
 section.program{
     background: #252932;
@@ -69,6 +83,8 @@ section.program{
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+    border-radius: 20px 20px 20px 20px;
+    margin: 10px 20px;
 }
 
 .skill-title{
@@ -100,6 +116,7 @@ section.program{
     width: 280px;
     margin: 20px 20px;
     align-items: center;
+    overflow: hidden;
 }
 
 .image-content,
@@ -125,6 +142,7 @@ section.program{
     background: #0087a9;
     /* background-repeat: ; */
     border-radius: 25px 25px 0 25px;
+    aspect-ratio: 1/1;
 }
 
 .overlay::before,
@@ -165,6 +183,7 @@ section.program{
     font-weight: 500;
     color: #374957;
     font-family: 'kavoon', cursive;
+    z-index: 100;
 }
 
 .proses{
@@ -220,4 +239,185 @@ section.app{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+section.lima{
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bungkus{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 30px 0;
+    width: 500px;
+}
+
+.apaj{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.ig:hover{
+    background: rgb(167, 9, 104);
+}
+.fb:hover{
+    background: rgb(12, 70, 204);
+}
+.yt:hover{
+    background: rgb(225, 6, 6);
+}
+.gh:hover{
+    background: rgb(0, 0, 0);
+}
+
+.apaj .icon{
+    font-size: 35px;
+    color: #292826;
+}
+
+.apaj:hover .icon{
+    color: white;
+}
+
+.garis{
+    margin: 0 20px;
+    width: 90%;
+}
+
+.copyright{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+}
+
+@media screen and (max-width:780px) {
+    section.program{
+        margin: 0;
+    }
+    header.sticky{
+        left: 15%;
+    }
+
+    button{
+        padding: 1px;
+    }
+
+    .back{display: none;}
+    .bacion{display: block;}
+
+    .card{
+        width: 250px;
+    }
+
+    .proses{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width:597px) {
+    .card{
+        width: 230px;
+    }
+
+    /* .card-image{
+        width: 140px;
+        height: 140px;
+    } */
+
+    .proses{
+        width: 210px;
+    }
+}
+
+@media screen and (max-width:557px) {
+    .card{
+        width: 210px;
+    }
+    .image-content{
+        padding: 20px 0;
+    }
+    .proses{
+        width: 190px;
+        height: 18px;
+    }
+    .proses-bar{
+        font-size: 14px;
+    }
+    .sosmed{width: 100%;}
+
+}
+
+@media screen and (max-width: 518px) {
+    .card{
+        width: 190px;
+    }
+    .skill-name{
+        font-size: 16px;
+    }
+    .proses{
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .card{
+        width: 170px;
+    }.card-image{
+        height: 130px;
+        width: 130px;
+    }
+    .proses{
+        width: 150px;
+        height: 16px;
+        /* margin: 0 14px; */
+    }
+    .proses-bar{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .card{
+        width: 150px;
+    }.card-image{
+        width: 120px;
+        height: 120px;
+    }
+    .proses{
+        width: 140px;
+    }
+}
+@media screen and (max-width: 396px) {
+    .card{
+        width: 140px;
+        margin: 10px;
+    }.card-image{
+        width: 120px;
+        height: 120px;
+    }
+    .proses{
+        width: 130px;
+    }
 }
