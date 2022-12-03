@@ -452,6 +452,10 @@ section.third{
     
 }
 
+.fil{
+    width: 30%;
+}
+
 .swiper-navBtn{
     color: #8cbdd1;
     transition: color .3s ease;
@@ -777,9 +781,7 @@ section.lima{
     .swiper-navBtn{
         display: none;
     }
-    .pro-card{
-        /* width: 600px; */
-    }
+
 
 }
 

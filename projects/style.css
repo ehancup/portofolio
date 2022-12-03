@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Lato&family=Montserrat:wght@500&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+
+}
+
+body{
+    background: url(../Group\ 5.png);
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
+/* nav */
+header{
+    font-family: 'lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px 10px; */
+    /* background: #374957; */
+    width: 9%;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    border-radius: 25px;
+    transition: .4s;
+    z-index: 100000000000;
+}
+
+header.sticky{
+    top: 30px;
+    padding: 3px 0px;
+    background: #374957;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px hsla(195, 5%, 16%, 0.518);
+    width: 7.5%;
+    left: 46.5%;
+}
+
+button{
+    /* margin-left: 20px; */
+    padding: 9px 33px;
+    background-color: #0087a9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: azure;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+button:hover{
+    transition: all 0.3s ease 0s;
+    background-color: #374957;
+    color: #0087a9;
+    position: static;
+}
+
+.bacion{
+    font-size: 40px;
+    display: none;
+}
+
+/* project */
+.poto{
+    height: 50px;
+}
+
+section.fourth{
+    min-height: 100vh;
+    background: #2e3440;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 10px 20px;
+    padding: 20px 0;
+    
+}
+
+.project-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.pro-card{
+    width: 35%;
+    height: 250px;
+
+    margin: 20px 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 8px 15px 10px hsla(195, 5%, 16%, 0.518);
+
+    /* background-repeat:; */
+}
+
+.pro-card a{
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    
+}
+
+.figma{
+    background: url(project/Frame\ 1.png);
+    background-size: cover;
+    background-position: left center;
+}
+
+.bandung{
+    background: url(Screenshot_20221120_142721.png);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.ehan{
+    background: url(project/Screenshot_20221120_145550.png);
+    background-size: cover;
+    background-position: center center;
+}
+.ehanf{
+    background: url(Screenshot_20221201_100339.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.more .pro-title{
+    opacity: 1;
+}
+
+.arrow{
+    font-size: 3rem;
+    color: white;
+}
+
+.pro-title{
+    width: 100%;
+    height: 100%;
+    background: #252932dc ;
+    opacity: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .4s;
+    text-align: center;
+    margin-bottom: 10px ;
+}
+
+.pro-title h3{
+    font-weight: 100;
+    color: white;
+    font-size: 1em;
+}
+
+.pro-title:hover{
+    opacity: 100%;
+}
+
+section.lima{
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bungkus{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 30px 0;
+    width: 500px;
+}
+
+.apaj{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.ig:hover{
+    background: rgb(167, 9, 104);
+}
+.fb:hover{
+    background: rgb(12, 70, 204);
+}
+.yt:hover{
+    background: rgb(225, 6, 6);
+}
+.gh:hover{
+    background: rgb(0, 0, 0);
+}
+
+.apaj .icon{
+    font-size: 35px;
+    color: #292826;
+}
+
+.apaj:hover .icon{
+    color: white;
+}
+
+.garis{
+    margin: 0 20px;
+    width: 90%;
+}
+
+.copyright{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 50px;
+}
+
+@media screen and (max-width:1052px) {
+    .pro-title{
+        opacity: 1;
+    }
+
+    .pro-title:hover{
+        background: rgba(0, 0, 0, 0.446);
+
+    }
+}
+
+@media screen and (max-width: 959px) {
+    section.fourth{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    section.fourth{
+        margin: 10px 0;
+    }
+    header.sticky{
+        left: 15%;
+    }
+
+    button{
+        padding: 1px;
+    }
+    .back{display: none;}
+    .bacion{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sosmed{width: 100%;}
+}
+
+@media screen and (max-width: 490px) {
+    .pro-title h1{
+        font-size: 1em;
+
+    }
+
+    .pro-title h3{
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pro-card{
+        width: 600px;
+        height: 130px;
+        margin: 5px 10px;
+    }
+}
