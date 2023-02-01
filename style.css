@@ -25,7 +25,7 @@ header{
 header.sticky{
    
     padding: 0 100px;
-    background: #3b414f;
+    background: #111418;
     top: 2px;
     right: 100px;
     left: 100px;
@@ -69,12 +69,12 @@ header ul li a{
 
 header ul li a:hover{
     color: #0087a9;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
     border-bottom: 4px solid #0087a9;
 }
 header ul li a:active{
     color: #0087a9;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
     border-bottom: 4px solid #0087a9;
 }
 
@@ -206,7 +206,7 @@ span.student{
 /* about */
 section.second{
     min-height: 700px;
-    background: #2e3440 url(rehan.png);
+    background: #111418 url(rehan.png);
     background-repeat: no-repeat;
     background-position: 25% 43%;
     min-height: 100vh;
@@ -511,7 +511,7 @@ button.view{
 /* project */
 section.fourth{
     min-height: 100vh;
-    background: #2e3440;
+    background: #111418;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -637,7 +637,7 @@ section.lima{
 }
 
 .ig:hover{
-    background: rgb(167, 9, 104);
+    background: url(istockphoto-1330343437-170667a.jpg);
 }
 .fb:hover{
     background: rgb(12, 70, 204);
@@ -738,7 +738,7 @@ section.lima{
 
     nav{
         position: absolute;
-        background: #3b414f;
+        background: #111418;
         top: 120px;
         border-radius: 10px;
         right: -500px;
