@@ -10,7 +10,7 @@
 }
 
 body{
-    background: url(../Group\ 5.png);
+    background: url(../palo\ 1.png);
     background-position: top center;
     background-attachment: fixed;
 }
@@ -82,7 +82,7 @@ button:hover{
 
 section.fourth{
     min-height: 100vh;
-    background: #2e3440;
+    background: #111418;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,6 +183,9 @@ section.lima{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #00000075;
+    margin:  10px 20px 10px  20px;
+    border-radius: 20px;
 }
 
 .bungkus{
@@ -193,12 +196,43 @@ section.lima{
     align-items: center;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.contact h3{
+    color: #1791b1;
+    font-family: 'poppins';
+}
+
+.contact h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.contact h6{
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'montserrat';
+}
+
+
 .sosmed{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 10px 0 30px 0;
     width: 500px;
+    overflow: hidden;
 }
 
 .apaj{
@@ -213,7 +247,7 @@ section.lima{
 }
 
 .ig:hover{
-    background: rgb(167, 9, 104);
+    background: url(../istockphoto-1330343437-170667a.jpg);
 }
 .fb:hover{
     background: rgb(12, 70, 204);
@@ -264,6 +298,9 @@ section.lima{
     section.fourth{
         margin: 10px 0;
     }
+    section.lima{
+        margin: 10px 0;
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -283,8 +320,15 @@ section.lima{
     }
 }
 
+@media screen and (max-width:700px) {
+    
+    .contact{width: 100%;}
+}
+
 @media screen and (max-width: 550px) {
     .sosmed{width: 100%;}
+
+
 }
 
 @media screen and (max-width: 490px) {
@@ -303,5 +347,30 @@ section.lima{
         width: 600px;
         height: 130px;
         margin: 5px 10px;
+    }
+    
+    .contact{
+        height: 150px;
+    }
+
+    .contact h3{
+        font-size: 1rem;
+    }
+
+    .contact h1{
+        font-size: 1.5rem;
+    }
+
+    .contact h6{
+        font-size: .5rem;
+    }
+
+    .apaj{
+        height: 40px;
+        width: 40px;
+    }
+
+    .apaj .icon{
+        font-size: 30px;
     }
 }

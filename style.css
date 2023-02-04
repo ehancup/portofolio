@@ -85,7 +85,7 @@ li.hiden{
 button{
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: #0087a9;
+    background-color: #1791b1;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -124,7 +124,7 @@ button:hover{
 
 /* homepage */
 body{
-    background: url(Group\ 5.png);
+    background: url(palo\ 1.png);
     background-position: top center;
     /* background-size: 100vh; */
     background-attachment: fixed;
@@ -312,6 +312,26 @@ section.third{
     box-sizing: border-box ;
     flex-direction: column;
 }
+.title-skill{
+    margin-bottom: 30px;
+}
+
+.title-skill h1.great{
+    font-size: 2.5rem;
+    /* text-decoration: underline; */
+    text-shadow:
+    0 0 4px #1791b1, 
+    0 0 10px #1791b1, 
+    0 0 19px #1791b1, 
+    0 0 40px #1791b1, 
+    0 0 80px #1791b1, 
+    0 0 90px#1791b1, 
+    0 0 100px #1791b1, 
+    0 0 155px #1791b1;
+    color: #fff;
+    font-weight: 1200;
+
+}
 
 .title-skill img{
     height: 50px;
@@ -320,7 +340,7 @@ section.third{
 .slide-container{
     max-width: 1140px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.23);
+    background: rgba(0, 0, 0, 0.325);
     padding: 40px 0;
     border-radius: 25px;
    
@@ -335,7 +355,7 @@ section.third{
 
 .card{
     border-radius: 25px;
-    background-color: #fff;
+    background-color: #242525;
     box-shadow: 0px 10px 10px hsla(195, 5%, 16%, 0.518);
     overflow: hidden;
 
@@ -380,7 +400,7 @@ section.third{
 }
 .overlay::after{
     border-radius: 0 25px 0 0 ;
-    background-color: #fff;
+    background-color: #242525;
 }
 
 .card-image{
@@ -388,7 +408,7 @@ section.third{
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #242525;
     padding: 3px;
 }
 
@@ -397,13 +417,13 @@ section.third{
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #0087a9;
+    border: 4px solid #1791b1;
 }
 
 .skill-name{
     font-size: 18px;
     font-weight: 500;
-    color: #374957;
+    color: azure;
     font-family: 'kavoon', cursive;
 }
 
@@ -412,12 +432,12 @@ section.third{
     height: 20px;
     border-radius: 3px;
     overflow: hidden;
-    background-color: #bebebe;
+    background-color: #3e4444;
     margin: 14px;
 }
 
 .proses-bar{
-    background-color: #0087a9;
+    background-color: #1791b1;
     
     height: 20px;
     justify-content: flex-end;
@@ -519,6 +539,7 @@ section.fourth{
     border-radius: 20px;
     margin: 0 20px;
     padding: 20px 0;
+    overflow: hidden;
     
 }
 
@@ -607,6 +628,9 @@ section.lima{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #00000075;
+    margin:  10px 20px 10px  40px;
+    border-radius: 20px;
 }
 
 .bungkus{
@@ -617,12 +641,42 @@ section.lima{
     align-items: center;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.contact h3{
+    color: #1791b1;
+    font-family: 'poppins';
+}
+
+.contact h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.contact h6{
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'montserrat';
+}
+
 .sosmed{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 10px 0 30px 0;
     width: 500px;
+    overflow: hidden;
 }
 
 .apaj{
@@ -682,6 +736,9 @@ section.lima{
     section.fourth{
         margin: 0 10px;
     }
+    section.lima{
+        margin:  10px;
+    }
     .about-wrap{
         flex-direction: column;
     }
@@ -712,6 +769,9 @@ section.lima{
     }
     section.fourth{
         margin: 0;
+    }
+    section.lima{
+        margin: 0 10px 30px 10px;
     }
     .about-wrap{
         flex-direction: column;
@@ -797,6 +857,9 @@ section.lima{
 
     }
 
+    .contact{width: 100%;}
+
+
     .name{
         padding-top: 200px;
         left: 0px;
@@ -846,6 +909,8 @@ section.lima{
     }
     .sosmed{width: 100%;}
 
+
+
 }
 
 @media screen and (max-width: 490px) {
@@ -891,6 +956,36 @@ section.lima{
         width: 600px;
         height: 130px;
         margin: 5px 10px;
+    }
+
+    .title-skill h1.great{
+        font-size: 1.5rem;
+    }
+
+
+    .contact{
+        height: 150px;
+    }
+
+    .contact h3{
+        font-size: 1rem;
+    }
+
+    .contact h1{
+        font-size: 1.5rem;
+    }
+
+    .contact h6{
+        font-size: .5rem;
+    }
+
+    .apaj{
+        height: 40px;
+        width: 40px;
+    }
+
+    .apaj .icon{
+        font-size: 30px;
     }
 }
 
