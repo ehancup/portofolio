@@ -42,8 +42,8 @@
                     </div>
                     <div class="title-home" data-aos="fade-down">
                         <h3>Hello there</h3>
-                        <h1>I'm <span class="pro">programmer</span></h1>
-                        <h4>but, im still a <span class="student">student</span></h4>
+                        <h1>I'm <span class="pro"></span></h1>
+                        <h4>but, im still a <span class="student">Newbie</span></h4>
                     </div>
                 </center>
             </div>
@@ -350,6 +350,23 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script src="typed.js"></script>
+<script>
+    var typed = new Typed('.pro', {
+  strings: ["Programmer", "UX Designer", "Developer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 800,
+  startDelay:200,
+  smartBackspace:false,
+  shuffle:true,
+  cursorChar:'_',
+//   fadeOut: true,
+  loop: true
+  });
+
+ 
 </script>
 <script>
     var swiper = new Swiper(".slide-content", {
