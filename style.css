@@ -1013,13 +1013,18 @@ section.lima{
         font-size: .5rem;
     }
 
+    .co{
+        height: 40px;
+        width: 40px;
+    }
+
     .apaj{
         height: 40px;
         width: 40px;
     }
 
     .apaj .icon{
-        font-size: 30px;
+        font-size: 18px;
     }
 }
 
