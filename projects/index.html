@@ -83,30 +83,42 @@
                     <h6>Thanks to have visited my website. What is your opinion about me? i'm good, aren't I?. if you want to chat with me or ask me for helping, you can contact me with this or click the contact button in the nav bar. Or if you want to have my instagram, discord, youtube, or github you can click on this icon.</h6>
                 </div>
                 <div class="sosmed">
-                    <a href="https://www.instagram.com/hancup._/" rel="noopener" target="_blank" title="instagram">
+                    <div data-aos="fade-right" data-aos-delay="100" class="co">
 
-                        <div class="apaj ig" data-aos="fade-right" data-aos-delay="100">
-                            <ion-icon class="icon" name="logo-instagram"></ion-icon>
-                        </div>
-                    </a>
-                    <a href="javascript:alert('gk punya fb bang')" title="facebook">
+                        <a onclick="instagram()" rel="noopener" target="_blank" title="instagram">
+                            
+                            <div class="apaj ig" >
+                                <ion-icon class="icon" name="logo-instagram"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="fade-right" class="co"> 
 
-                        <div class="apaj fb" data-aos="fade-right">
-                            <ion-icon class="icon" name="logo-facebook"></ion-icon>
-                        </div>
-                    </a>
-                    <a href="javascript:alert('gk punya channel bang')" title="youtube">
+                        <a onclick="linked()" title="LinkedIn">
+                            
+                            <div class="apaj fb" >
+                                <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="fade-left" class="co">
 
-                        <div class="apaj yt" data-aos="fade-left">
-                            <ion-icon class="icon" name="logo-youtube"></ion-icon>
-                        </div>
-                    </a>
-                    <a href="https://github.com/ehancup" onclick="alert('anda akan dipindahkan ke github')" target="_blank" rel="noopener" title="github">
+                        <a href="javascript:alert('gk punya channel bang')" title="youtube">
+                            
+                            <div class="apaj yt" >
+                                <ion-icon class="icon" name="logo-youtube"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="100" class="co">
 
-                        <div class="apaj gh" data-aos="fade-left" data-aos-delay="100">
-                            <ion-icon class="icon" name="logo-github"></ion-icon>
-                        </div>
-                    </a>
+                        <a onclick="github()" target="_blank" rel="noopener" title="github">
+                            
+                            <div class="apaj gh" >
+                                <ion-icon class="icon" name="logo-octocat"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="garis">
                     <hr>
@@ -130,5 +142,34 @@
         header.classList.toggle('sticky', window.scrollY > 0);
     })
 
+</script>
+<script>
+    function github(){
+        let github = confirm('anda akan membuka github, anda yakin?')
+
+        if (github){
+            window.location.assign('https://github.com/ehancup')
+        } else {
+            alert('thx')
+        }
+    }
+function instagram(){
+    let instagram = confirm('anda akan membuka instagram, anda yakin?')
+
+    if (instagram){
+        window.location.assign('https://www.instagram.com/hancup._/')
+    } else {
+        alert('thx')
+    }
+}
+function linked(){
+    let linked = confirm('anda akan membuka LinkedIn, anda yakin?')
+
+    if (linked){
+        window.location.assign('https://www.linkedin.com/in/raihan-yusuf-8156ab265/')
+    } else {
+        alert('thx')
+    }
+}
 </script>
 </html>

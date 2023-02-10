@@ -72,11 +72,11 @@
                         </table>
                     </div>
                     <p align="justify" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400" >
-                       Hi, welcome to my simply portofolio website. I'm 15 and i'm still studying at <a href="https://smkmadinatulquran.sch.id/" target="_blank" rel="noopener">SMK Madinatul qur'an (vocational high school)</a>.
-                       This is the first website that I made seriously. This website will continue to be updated as my skills increase.
-                       I got the inspirations from <a href="https://id.pinterest.com/" target="_blank" rel="noopener">Pinterest</a>. I built this web using <a href="https://id.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">HTML</a>, <a href="https://id.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" rel="noopener">CSS</a>, 
-                       and a little bit of <a href="https://id.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener">JavaScript</a>.
-                       For the animation i use <a href="https://michalsnik.github.io/aos/" target="_blank" rel="noopener">AOS</a> library And i dont use <a href="https://getbootstrap.com/" target="_blank" rel="noopener">BOOTSTRAP</a> template for my portofolio website.
+                       Hi, welcome to my simply portofolio website. I'm 15 and I'm still studying at <a href="https://smkmadinatulquran.sch.id/" target="_blank" rel="noopener">SMK Madinatul qur'an (vocational high school)</a>.
+                       This is the first website which I made for the school examination. This website will continue to be updated as my skills increase. <br>
+                       I got the inspirations from <a href="https://id.pinterest.com/" target="_blank" rel="noopener">Pinterest</a>. I built this web using <a href="https://id.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">HTML</a>, <a href="https://id.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank" rel="noopener">CSS</a> for the style, 
+                       and a little bit of <a href="https://id.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener">vanilla JavaScript</a>.
+                       For the animation i use <a href="https://michalsnik.github.io/aos/" target="_blank" rel="noopener">AOS</a> library And i don't use any template for my portofolio website.
                     </p>
                 </div>
             </div>
@@ -307,30 +307,42 @@
                     <h6>Thanks to have visited my website. What is your opinion about me? i'm good, aren't I?. if you want to chat with me or ask me for helping, you can contact me with this or click the contact button in the nav bar. Or if you want to have my instagram, discord, youtube, or github you can click on this icon.</h6>
                 </div>
                 <div class="sosmed">
-                    <a href="https://www.instagram.com/hancup._/" rel="noopener" target="_blank" title="instagram">
+                    <div data-aos="fade-right" data-aos-delay="100" class="co">
 
-                        <div class="apaj ig" data-aos="fade-right" data-aos-delay="100">
-                            <ion-icon class="icon" name="logo-instagram"></ion-icon>
-                        </div>
-                    </a>
-                    <a href="javascript:alert('gk punya fb bang')" title="facebook">
+                        <a onclick="instagram()" rel="noopener" target="_blank" title="instagram">
+                            
+                            <div class="apaj ig" >
+                                <ion-icon class="icon" name="logo-instagram"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="fade-right" class="co"> 
 
-                        <div class="apaj fb" data-aos="fade-right">
-                            <ion-icon class="icon" name="logo-discord"></ion-icon>
-                        </div>
-                    </a>
-                    <a href="javascript:alert('gk punya channel bang')" title="youtube">
+                        <a onclick="linked()" title="LinkedIn">
+                            
+                            <div class="apaj fb" >
+                                <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="fade-left" class="co">
 
-                        <div class="apaj yt" data-aos="fade-left">
-                            <ion-icon class="icon" name="logo-youtube"></ion-icon>
-                        </div>
-                    </a>
-                    <a href="https://github.com/ehancup" onclick="alert('anda akan dipindahkan ke github')" target="_blank" rel="noopener" title="github">
+                        <a href="javascript:alert('gk punya channel bang')" title="youtube">
+                            
+                            <div class="apaj yt" >
+                                <ion-icon class="icon" name="logo-youtube"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="100" class="co">
 
-                        <div class="apaj gh" data-aos="fade-left" data-aos-delay="100">
-                            <ion-icon class="icon" name="logo-github"></ion-icon>
-                        </div>
-                    </a>
+                        <a onclick="github()" target="_blank" rel="noopener" title="github">
+                            
+                            <div class="apaj gh" >
+                                <ion-icon class="icon" name="logo-octocat"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="garis">
                     <hr>
@@ -422,5 +434,34 @@
     }
     activemenu();
     window.addEventListener("scroll", activemenu)
+</script>
+<script>
+    function github(){
+        let github = confirm('anda akan membuka github, anda yakin?')
+
+        if (github){
+            window.location.assign('https://github.com/ehancup')
+        } else {
+            alert('thx')
+        }
+    }
+function instagram(){
+    let instagram = confirm('anda akan membuka instagram, anda yakin?')
+
+    if (instagram){
+        window.location.assign('https://www.instagram.com/hancup._/')
+    } else {
+        alert('thx')
+    }
+}
+function linked(){
+    let linked = confirm('anda akan membuka LinkedIn, anda yakin?')
+
+    if (linked){
+        window.location.assign('https://www.linkedin.com/in/raihan-yusuf-8156ab265/')
+    } else {
+        alert('thx')
+    }
+}
 </script>
 </html>

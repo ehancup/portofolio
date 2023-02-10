@@ -62,7 +62,7 @@ header ul li a{
     color: azure;
     letter-spacing: 2px;
     font-weight: 500;
-    transition: .4s;
+    transition: ease .4s ;
     padding-bottom: 2px;
     border-bottom: 3px solid #0000;
 }
@@ -233,7 +233,7 @@ section.second{
 .name h5{
     letter-spacing: 1.5px;
     font-size: 1rem;
-    color: azure;
+    color: #94a1b2;
     font-weight: 100;
 }
 
@@ -241,6 +241,7 @@ section.second{
     letter-spacing: 5px;
     font-size: 4rem;
     font-weight: 900;
+    text-shadow: 15 15 15 #242525;
 }
 
 .name h1 span{
@@ -277,9 +278,10 @@ section.second{
 
 .aboutMe p{
     margin-top: 50px;
-    color: azure;
+    color: #94a1b2;
     font-size: 1.2rem;
     max-width: 680px;
+    text-align: justify;
 }
 
 .aboutMe p a{
@@ -423,7 +425,7 @@ section.third{
 .skill-name{
     font-size: 18px;
     font-weight: 500;
-    color: azure;
+    color: #94a1b2;
     font-family: 'kavoon', cursive;
 }
 
@@ -665,7 +667,7 @@ section.lima{
 
 .contact h6{
     text-align: center;
-    color: #fff;
+    color: #94a1b2;
     font-weight: 100;
     font-family: 'montserrat';
 }
@@ -678,19 +680,48 @@ section.lima{
     width: 500px;
     overflow: hidden;
 }
-
+.co{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
 .apaj{
     height: 50px;
     width: 50px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
     transition: all .3s;
+    border: solid 2px azure;
+    overflow: hidden;
+    transition: ease color .33s ;
 }
 
-.ig:hover{
+.apaj:hover{
+    border: solid 2px #292826;
+}
+
+.apaj:before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #1791b1;
+    bottom: -50px;
+    transition: ease .3s;
+    transition-delay: .5s;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.apaj:hover:before{
+    transform: translateY(-50px);
+}
+
+/* .ig:hover{
     background: url(istockphoto-1330343437-170667a.jpg);
 }
 .fb:hover{
@@ -701,15 +732,18 @@ section.lima{
 }
 .gh:hover{
     background: rgb(0, 0, 0);
-}
+} */
 
 .apaj .icon{
-    font-size: 35px;
-    color: #292826;
+    font-size: 20px;
+    color: azure;
+    font-weight: 100;
+    transition: ease .5s;
+    transition-delay: .5s ;
 }
 
 .apaj:hover .icon{
-    color: white;
+    color: #242525;
 }
 
 .garis{

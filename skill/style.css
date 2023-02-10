@@ -312,19 +312,49 @@ section.lima{
     overflow: hidden;
 }
 
+.co{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
 .apaj{
     height: 50px;
     width: 50px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
     transition: all .3s;
+    border: solid 2px azure;
+    overflow: hidden;
+    transition: ease color .33s ;
 }
 
-.ig:hover{
-    background: url(../istockphoto-1330343437-170667a.jpg);
+.apaj:hover{
+    border: solid 2px #292826;
+}
+
+.apaj:before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #1791b1;
+    bottom: -50px;
+    transition: ease .3s;
+    transition-delay: .5s;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.apaj:hover:before{
+    transform: translateY(-50px);
+}
+
+/* .ig:hover{
+    background: url(istockphoto-1330343437-170667a.jpg);
 }
 .fb:hover{
     background: rgb(12, 70, 204);
@@ -334,16 +364,20 @@ section.lima{
 }
 .gh:hover{
     background: rgb(0, 0, 0);
-}
+} */
 
 .apaj .icon{
-    font-size: 35px;
-    color: #292826;
+    font-size: 20px;
+    color: azure;
+    font-weight: 100;
+    transition: ease .5s;
+    transition-delay: .5s ;
 }
 
 .apaj:hover .icon{
-    color: white;
+    color: #242525;
 }
+
 
 .garis{
     margin: 0 20px;
