@@ -211,7 +211,7 @@ header{
     left: 10px;
     border-radius: 25px;
     transition: .4s;
-    z-index: 100000000000;
+    z-index: 1000;
 }
 
 header.sticky{
