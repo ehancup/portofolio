@@ -9,6 +9,25 @@
     <title>Projects</title>
 </head>
 <body>
+    <div id="loader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+        
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+        
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
     <header>
         <nav>
             <a href="../index.html#project">
@@ -68,6 +87,15 @@
                         <div class="pro-title">
                             <h1>e-Commerce <br>complete <br>design</h1>
                             <h3>( Click to view )</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="pro-card ehanf " data-aos="fade-up-left">
+                    <a href="https://www.figma.com/proto/UAXuVrI2w5UNwJ7aSD1QC0/PASSB?page-id=0%3A1&node-id=39%3A33&scaling=scale-down" target="_blank" rel="noopener">
+
+                        <div class="pro-title">
+                            <h1>webStore</h1>
+                            <h3>( Made by AI )</h3>
                         </div>
                     </a>
                 </div>
@@ -140,6 +168,15 @@
     window.addEventListener('scroll', function(){
         var header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
+    })
+
+    window.addEventListener("load",() => {
+        let loader = document.querySelector('#loader');
+
+        loader.classList.add('loader--hidden');
+        loader.addEventListener("transitionend",() => {
+            document.body.removeChild(loader);
+        })
     })
 
 </script>

@@ -20,3 +20,4 @@ main.addEventListener('scroll', function() {
     btnMenu.classList.remove('btn-active')
     clsMenu.classList.remove('boton')
 })
+
